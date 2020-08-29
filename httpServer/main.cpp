@@ -10,7 +10,7 @@ EventLoop *lp;
 
 static void sighandler1( int sig_no )   
 {   
-      exit(0);   
+    exit(0);
 }   
 static void sighandler2( int sig_no )   
 {   

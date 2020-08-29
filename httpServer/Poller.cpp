@@ -31,7 +31,7 @@ Poller::Poller()
     pollfd_ = epoll_create(256);
     if(pollfd_ == -1)
     {
-        perror("epoll_create1");
+        perror("epoll_create");
         exit(1);
     }
     std::cout << "epoll_create" << pollfd_ << std::endl;

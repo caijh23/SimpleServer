@@ -43,7 +43,7 @@ void TcpServer::Start()
     loop_->AddChannelToPoller(&serverchannel_);
 }
 
-/新TCP连接处理，核心功能，业务功能注册，任务分发
+//新TCP连接处理，核心功能，业务功能注册，任务分发
 void TcpServer::OnNewConnection()
 {
     //循环调用accept，获取所有的建立好连接的客户端fd

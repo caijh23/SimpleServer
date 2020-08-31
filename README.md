@@ -17,6 +17,10 @@ make clean
 
 ![alt model](./pic/model.png)
 
+简单的测试结果：(2G内存虚拟机)
+
+![alt model](./pic/result.png)
+
 ### 主要学习点：
 - 1.使用Reactor分发方案替代用线程池处理一切任务
 - 2.学习c++11 thread库相关的一些知识，socket编程、IO复用等等

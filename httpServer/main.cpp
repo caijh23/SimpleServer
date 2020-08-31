@@ -3,7 +3,6 @@
 #include <signal.h>
 #include "EventLoop.h"
 #include "HttpServer.h"
-#include "EchoServer.h"
 
 EventLoop *lp;
 

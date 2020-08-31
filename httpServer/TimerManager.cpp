@@ -11,7 +11,7 @@
 TimerManager* TimerManager::ptimermanager_ = nullptr;
 std::mutex TimerManager::mutex_;
 TimerManager::GC TimerManager::gc;
-const int TimerManager::soltinterval = 1;
+const int TimerManager::slotinterval = 1;
 const int TimerManager::slotnum = 1024;
 
 TimerManager::TimerManager(/* args */)
@@ -74,13 +74,13 @@ void TimerManager::CalculateTimer(Timer* ptimer)
     
     int tick = 0;
     int timeout = ptimer->timeout_;
-    if (timeout < soltinterval)
+    if (timeout < slotinterval)
     {
         tick = 1; //不足一个slot间隔，按延迟1slot计算
     }
     else
     {
-        tick = timeout / soltinterval;
+        tick = timeout / slotinterval;
     }
 
     ptimer->rotation = tick / slotnum;

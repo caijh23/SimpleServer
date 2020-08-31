@@ -19,7 +19,11 @@ make clean
 
 简单的测试结果：(2G内存虚拟机)
 
+./httpserver 80 4 2
+- 读取文件的情况：
 ![alt model](./pic/result.png)
+- 直接内存返回的情况：
+![alt model](./pic/result2.png)
 
 ### 主要学习点：
 - 1.使用Reactor分发方案替代用线程池处理一切任务
